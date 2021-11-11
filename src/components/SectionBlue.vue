@@ -60,12 +60,12 @@ export default {
     margin: auto;
 
     .containerBlue_list{
-      display: flex;
+      display: $display_flex;
       justify-content: space-evenly;
       list-style: none;
 
       .containerBlue_list_item{
-        display: flex;
+        display: $display_flex;
         align-items: center;
         color: white;
         font-size: 12px;

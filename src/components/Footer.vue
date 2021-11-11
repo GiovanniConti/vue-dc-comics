@@ -103,7 +103,7 @@ footer{
       max-width: $container_width;
       padding: $padding-Y;
       margin: auto;
-      display: flex;
+      display: $display_flex;
       justify-content: space-between;
 
       .containerFooterLinks_Lists{
@@ -152,8 +152,8 @@ footer{
       max-width: $container_width;
       padding: $padding-Y;
       margin: auto;
-      display: flex;
-      justify-content: space-between;
+      display: $display_flex;
+      justify-content: $flex_space_between;
 
       .containerFooterSocials_btn{
         font-size: 16px;
@@ -166,7 +166,7 @@ footer{
 
       .containerFooterSocials_list{
         list-style: none;
-        display: flex;
+        display: $display_flex;
         align-items: center;
 
         .containerFooterSocials_list_item{
