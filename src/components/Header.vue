@@ -4,11 +4,16 @@
       <img src="../assets/dc-logo.png" alt="dc-logo" class="logoHeader">
       <ul class="navHeader">
         <li 
-        class="navHeader_item"
-        v-for="(item, i) in navbarItem"
-        :key="i"
+          class="navHeader_item"
+          v-for="(item, i) in navbarItem"
+          :key="i"
         >
-          <a :href="item.href" class="navHeader_item_link">{{item.title}}</a>
+          <a
+            :href="item.href" class="navHeader_item_link" 
+            :class="(i === activeItem) ? 'navHeader_item_link-selected' : '' "
+          >
+            {{item.title}}
+          </a>
         </li>
       </ul>
     </div>
@@ -64,6 +69,7 @@ export default {
           href: "#",
         },
       ],
+      activeItem: 0,
     };
   },
 }

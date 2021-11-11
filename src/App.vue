@@ -4,6 +4,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Header></Header>
     <Main titleMain='--> Content goes here <--'></Main>
+    <SectionBlue></SectionBlue>
     <Footer></Footer>
   </div>
 </template>
@@ -12,6 +13,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
+import SectionBlue from './components/SectionBlue.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -20,7 +22,8 @@ export default {
     // HelloWorld,
     Header,
     Main,
-    Footer
+    SectionBlue,
+    Footer,
   }
 }
 </script>

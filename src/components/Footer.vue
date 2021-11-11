@@ -8,11 +8,11 @@
           :key="i"
           >
           <li
-          v-for="(links, j) in list"
-          :key="j"
-          :class="(j === 0) ? 'list_link_title' : '' "
+            v-for="(links, j) in list"
+            :key="j"
+            :class="(j === 0) ? 'list_link_title' : '' "
           >
-          {{links}}
+            {{links}}
           </li>
           </ul>
         </div>
