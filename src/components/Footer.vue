@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="containerFooter">
+    <div class="containerFooterTop">
       <div class="containerFooterLinks">
         <div class="containerFooterLinks_Lists">
           <ul class="containerFooterLinks_list"
@@ -21,8 +21,22 @@
           <img src="../assets/dc-logo-bg.png" alt="">
         </div>
       </div>
+    </div>
+    <div class="containerFooterBottom">
+      
       <div class="containerFooterSocials">
-        
+      
+      <button class="containerFooterSocials_btn">SIGN-UP NOW!</button>
+
+      <ul class="containerFooterSocials_list">
+        <li class="containerFooterSocials_list_item">FOLLOW US</li>
+        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
+        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
+        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
+        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
+        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+      </ul>
+
       </div>
     </div>
   </footer>
@@ -81,14 +95,14 @@ export default {
 @import "../styles/variables.scss";
 
 footer{
-  background-image: url('../assets/footer-bg.jpg');
-
-  .containerFooter{
-    max-width: $container_width;
-    padding: $padding-Y;
-    margin: auto;
+  
+  .containerFooterTop{
+    background-image: url('../assets/footer-bg.jpg');
 
     .containerFooterLinks{
+      max-width: $container_width;
+      padding: $padding-Y;
+      margin: auto;
       display: flex;
       justify-content: space-between;
 
@@ -102,19 +116,23 @@ footer{
           list-style: none;
           color: rgb(149, 149, 149);
           font-size: 15px;
+          padding: 0;
+          padding-right: 25px;
+          margin: 0;
           
           .list_link_title{
             color: white;
             font-size: 18px;
             font-weight: bold;
+            padding: 10px 0;
           }
         }
       }
 
-
       .containerFooterLinks_img{
         overflow: hidden;
         max-height: 300px;
+        text-align: end;
 
         img{
           position: relative;
@@ -125,6 +143,40 @@ footer{
     }
 
 
+  }
+
+  .containerFooterBottom{
+    background: rgb(48, 48, 48);
+
+    .containerFooterSocials{
+      max-width: $container_width;
+      padding: $padding-Y;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .containerFooterSocials_btn{
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid $color_primary;
+      }
+
+      .containerFooterSocials_list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        .containerFooterSocials_list_item{
+          padding-left: 15px;
+          color: $color_primary;
+          font-weight: bold;
+        }
+      }
+
+    }
   }
 }
 
