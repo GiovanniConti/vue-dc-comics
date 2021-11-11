@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/dc-logo.png">
+    <!-- <img alt="Vue logo" src="./assets/dc-logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Header></Header>
     <Main></Main>
@@ -32,6 +32,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  max-width: 1200px;
+  margin: auto;
 }
 </style>
