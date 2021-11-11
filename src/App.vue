@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/dc-logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Header></Header>
-    <Main></Main>
+    <Main titleMain='--> Content goes here <--'></Main>
     <Footer></Footer>
   </div>
 </template>
@@ -30,9 +30,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  max-width: 1200px;
-  margin: auto;
 }
 </style>
