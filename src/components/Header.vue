@@ -11,6 +11,7 @@
           <a
             :href="item.href" class="navHeader_item_link" 
             :class="(i === activeItem) ? 'navHeader_item_link-selected' : '' "
+            @click.prevent="activeItem = i"
           >
             {{item.title}}
           </a>
@@ -114,7 +115,7 @@ export default {
         .navHeader_item_link-selected{
           color: $color_primary;
           border-bottom: 4px solid $color_primary;
-          padding-bottom: 45px;
+          padding-bottom: 38px;
         }
         
       }
