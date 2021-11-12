@@ -1,22 +1,32 @@
 <template>
   <section class="cardsSection">
     <div class="cardsContainer">
-      CARDS
+      <ProductCard
+      v-for="(card, i) in cardsList"
+      :key="i"
+      :img='card.thumb'
+      :title='card.series'
+      />
     </div>
 
   </section>
 </template>
 
 <script>
+import CardsData from '../database/dc-comics.json'
+import ProductCard from './ProductCard.vue'
+
 export default {
   name: "CardsContainer",
-  props: { },
-  components: {
+  props: {
 
+  },
+  components: {
+    ProductCard,
   },
   data() {
     return {
-
+      cardsList: CardsData,
     };
   },
 }
@@ -30,13 +40,14 @@ export default {
   min-height: 300px;
   padding: $padding-Y;
 
-  
+
   .cardsContainer{
     width: $container_width;
-    
     margin: auto;
-    background-color: slategrey;
-    min-height: 100px;
+    display: $display_flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    
   }
 }
 

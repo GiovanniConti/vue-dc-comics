@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 import CardsContainer from './CardsContainer.vue'
 
 export default {

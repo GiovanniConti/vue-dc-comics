@@ -87,7 +87,7 @@ export default {
     align-items: center;
     
     .logoHeader{
-      width: 70px;
+      width: 80px;
       padding: 10px 0;
     }
   

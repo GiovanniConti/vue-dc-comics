@@ -109,7 +109,7 @@ footer{
 
     .containerFooterLinks{
       max-width: $container_width;
-      max-height: 335px;
+      max-height: 345px;
       margin: auto;
       display: $display_flex;
       justify-content: space-between;
