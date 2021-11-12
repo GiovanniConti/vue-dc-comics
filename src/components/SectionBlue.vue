@@ -53,10 +53,10 @@ export default {
 
 .sectionBlue{
   background: $color_primary;
+  padding: $padding-Y;
 
   .containerBlue{
     max-width: $container_width;
-    padding: $padding-Y;
     margin: auto;
 
     .containerBlue_list{

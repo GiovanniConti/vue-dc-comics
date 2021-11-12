@@ -109,7 +109,7 @@ footer{
 
     .containerFooterLinks{
       max-width: $container_width;
-      padding: $padding-Y;
+      max-height: 335px;
       margin: auto;
       display: $display_flex;
       justify-content: space-between;
@@ -118,7 +118,7 @@ footer{
         display: $display_flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 300px;
+        padding: $padding-Y;
       
         .containerFooterLinks_list{
           list-style: none;
@@ -139,13 +139,12 @@ footer{
 
       .containerFooterLinks_img{
         overflow: hidden;
-        max-height: 300px;
         text-align: end;
 
         img{
           position: relative;
-          width: 80%;
-          top: -75px;
+          width: 95%;
+          top: -100px;
         }
       }
     }
@@ -155,10 +154,10 @@ footer{
 
   .containerFooterBottom{
     background: rgb(48, 48, 48);
+    padding: $padding-Y;
 
     .containerFooterSocials{
       max-width: $container_width;
-      padding: $padding-Y;
       margin: auto;
       display: $display_flex;
       justify-content: $flex_space_between;

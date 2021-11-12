@@ -1,16 +1,23 @@
 <template>
   <main>
-    <div class="containerMain">
-      <h1> {{titleMain}} </h1>
+    <div class="containerHero">
+      <img src="@/assets/jumbotron.jpg" alt="">
     </div>
+    <CardsContainer/>
   </main>
 </template>
 
 <script>
+
+import CardsContainer from './CardsContainer.vue'
+
 export default {
   name: 'Main',
   props: {
     titleMain: String,
+  },
+  components: {
+    CardsContainer,
   },
   data() {
     return {
@@ -24,17 +31,13 @@ export default {
 @import "../styles/variables.scss";
 
   main{
-    background: black;
     
-    .containerMain{
-      max-width: $container_width;
-      padding: $padding-Y;
-      margin: auto;
-
-      h1{
-        color: white;
-        font-size: 30px;
-      }
+    .containerHero{
+      max-height: 400px;
+      overflow: hidden;
     }
+
+
+    
   }
 </style>

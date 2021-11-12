@@ -85,16 +85,17 @@ export default {
     display: $display_flex;
     justify-content: $flex_space_between;
     align-items: center;
-    padding: $padding-Y;
     
     .logoHeader{
-      width: 87px;
+      width: 70px;
+      padding: 10px 0;
     }
   
     .navHeader{
       display: $display_flex;
       justify-content: space-evenly;
       list-style: none;
+      padding: $padding-Y;
   
       .navHeader_item{
         
