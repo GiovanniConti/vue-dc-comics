@@ -61,6 +61,7 @@ export default {
         color: white;
         font-weight: bold;
         padding: 10px 40px;
+        border: 0;
       }
     }
 

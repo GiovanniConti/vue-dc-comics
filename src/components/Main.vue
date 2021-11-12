@@ -34,6 +34,10 @@ export default {
     .containerHero{
       max-height: 400px;
       overflow: hidden;
+
+      img{
+        width: 100%;
+      }
     }
 
 
