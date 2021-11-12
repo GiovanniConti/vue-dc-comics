@@ -7,7 +7,7 @@
         v-for="(item, i) in blueList"
         :key="i"
       >
-        <img src='../assets/buy-comics-digital-comics.png' :alt="item.text">
+        <img :src='require( "@/assets/" + item.icon)' :alt="item.text">
         <h3>{{item.text}}</h3>
       </li>
     </ul>
@@ -23,23 +23,23 @@ export default {
     return {
       blueList: [
         {
-          icon: '../assets/buy-comics-digital-comics.png',
+          icon: 'buy-comics-digital-comics.png',
           text: 'DIGITAL COMICS',
         },
         {
-          icon: '../assets/buy-comics-merchandise.png',
+          icon: 'buy-comics-merchandise.png',
           text: 'DC MERCHANDISE',
         },
         {
-          icon: '../assets/buy-comics-subscriptions.png',
+          icon: 'buy-comics-subscriptions.png',
           text: 'SUBSCRIPTIONS',
         },
         {
-          icon: '../assets/buy-comics-shop-locator.png',
+          icon: 'buy-comics-shop-locator.png',
           text: 'COMIC SHOP LOCATOR',
         },
         {
-          icon: '../assets/buy-dc-power-visa.svg',
+          icon: 'buy-dc-power-visa.svg',
           text: 'DC POWER VISA',
         },
       ]

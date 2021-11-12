@@ -4,7 +4,7 @@
       <div class="containerFooterLinks">
         <div class="containerFooterLinks_Lists">
           <ul class="containerFooterLinks_list"
-          v-for="(list, i) in FooterLinksList"
+          v-for="(list, i) in footerLinksList"
           :key="i"
           >
           <li
@@ -30,11 +30,12 @@
 
       <ul class="containerFooterSocials_list">
         <li class="containerFooterSocials_list_item">FOLLOW US</li>
-        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-facebook.png" alt=""></a></li>
-        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-twitter.png" alt=""></a></li>
-        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-youtube.png" alt=""></a></li>
-        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-pinterest.png" alt=""></a></li>
-        <li class="containerFooterSocials_list_item"><a href="#"><img src="../assets/footer-periscope.png" alt=""></a></li>
+        <li class="containerFooterSocials_list_item"
+          v-for="(icon, i) in socialsIconsList"
+          :key="i"
+        >
+          <a href="#"><img :src="require('@/assets/footer-' + icon + '.png')" :alt="icon"></a>
+        </li>
       </ul>
 
       </div>
@@ -48,7 +49,7 @@ export default {
   props: { },
   data() {
     return {
-      FooterLinksList:[
+      footerLinksList:[
         [
           "DC COMICS",
           "Characters",
@@ -85,6 +86,13 @@ export default {
           "DC Universe",
           "DC Power Visa"
         ],
+      ],
+      socialsIconsList: [
+        "facebook",
+        "twitter",
+        "youtube",
+        "pinterest",
+        "periscope",
       ],
     };
   },
