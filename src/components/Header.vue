@@ -7,11 +7,12 @@
           class="navHeader_item"
           v-for="(item, i) in navbarItem"
           :key="i"
+          :class="(i === activeItem) ? 'navHeader_item-selected' : '' "
         >
           <a
             :href="item.href" class="navHeader_item_link" 
-            :class="(i === activeItem) ? 'navHeader_item_link-selected' : '' "
             @click.prevent="activeItem = i"
+            :class="(i === activeItem) ? 'navHeader_item_link-selected' : '' "
           >
             {{item.title}}
           </a>
@@ -96,9 +97,10 @@ export default {
       display: $display_flex;
       justify-content: space-evenly;
       list-style: none;
-      padding: $padding-Y;
   
       .navHeader_item{
+      padding: $padding-Y;
+
         
         .navHeader_item_link{
           text-decoration: none;
@@ -110,14 +112,17 @@ export default {
           &:hover{
             color: $color_primary;
           }
-          
         }
+
         .navHeader_item_link-selected{
           color: $color_primary;
-          border-bottom: 4px solid $color_primary;
-          padding-bottom: 38px;
         }
-        
+      }
+
+      .navHeader_item-selected{
+        color: $color_primary;
+        border-bottom: 4px solid $color_primary;
+        padding-bottom: 38px;
       }
     }
 
